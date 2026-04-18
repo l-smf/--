@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Workout Schedule</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Workout">
+<meta name="theme-color" content="#c8ff00">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyNTYiIGZpbGw9IiMxMTExMTgiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyNDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNyA1IiBvcGFjaXR5PSIwLjMiLz4KPHJlY3QgeD0iNzIiIHk9IjI0MCIgd2lkdGg9IjM2OCIgaGVpZ2h0PSIyMCIgcng9IjEwIiBmaWxsPSIjYzhmZjAwIi8+CjxyZWN0IHg9IjcwIiB5PSIxOTYiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxMDgiIHJ4PSI3IiBmaWxsPSIjYzhmZjAwIi8+CjxyZWN0IHg9IjcwIiB5PSIxOTYiIHdpZHRoPSI5IiBoZWlnaHQ9IjEwOCIgcng9IjciIGZpbGw9IiM3ZmFhMDAiLz4KPHJlY3QgeD0iMTA4IiB5PSIyMTAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI4MCIgcng9IjUiIGZpbGw9IiNjOGZmMDAiLz4KPHJlY3QgeD0iMTA4IiB5PSIyMTAiIHdpZHRoPSI2IiBoZWlnaHQ9IjgwIiByeD0iNSIgZmlsbD0iIzdmYWEwMCIvPgo8cmVjdCB4PSIzODQiIHk9IjIxMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjgwIiByeD0iNSIgZmlsbD0iI2M4ZmYwMCIvPgo8cmVjdCB4PSIzOTgiIHk9IjIxMCIgd2lkdGg9IjYiIGhlaWdodD0iODAiIHJ4PSI1IiBmaWxsPSIjN2ZhYTAwIi8+CjxyZWN0IHg9IjQxMCIgeT0iMTk2IiB3aWR0aD0iMzIiIGhlaWdodD0iMTA4IiByeD0iNyIgZmlsbD0iI2M4ZmYwMCIvPgo8cmVjdCB4PSI0MTAiIHk9IjE5NiIgd2lkdGg9IjkiIGhlaWdodD0iMTA4IiByeD0iNyIgZmlsbD0iIzdmYWEwMCIvPgo8cmVjdCB4PSIyMjYiIHk9IjI0MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzBhMGEwZiIgb3BhY2l0eT0iMC4yIi8+CjxsaW5lIHgxPSIyMzYiIHkxPSIyNDMiIHgyPSIyMzYiIHkyPSIyNTciIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuNSIvPgo8bGluZSB4MT0iMjQ2IiB5MT0iMjQzIiB4Mj0iMjQ2IiB5Mj0iMjU3IiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjUiLz4KPGxpbmUgeDE9IjI1NiIgeTE9IjI0MyIgeDI9IjI1NiIgeTI9IjI1NyIgc3Ryb2tlPSIjYzhmZjAwIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC41Ii8+CjxsaW5lIHgxPSIyNjYiIHkxPSIyNDMiIHgyPSIyNjYiIHkyPSIyNTciIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuNSIvPgo8bGluZSB4MT0iMjc2IiB5MT0iMjQzIiB4Mj0iMjc2IiB5Mj0iMjU3IiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjUiLz4KPHRleHQgeD0iMjU2IiB5PSIzMzQiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ0IiBmb250LXdlaWdodD0iOTAwIiBmaWxsPSIjYzhmZjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMSI+QUxTSEFNQVJJPC90ZXh0Pgo8Y2lyY2xlIGN4PSIxOTYiIGN5PSIzNTIiIHI9IjMiIGZpbGw9IiNjOGZmMDAiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMzUyIiByPSIzIiBmaWxsPSIjYzhmZjAwIi8+CjxjaXJjbGUgY3g9IjMxNiIgY3k9IjM1MiIgcj0iMyIgZmlsbD0iI2M4ZmYwMCIvPgo8dGV4dCB4PSIyNTYiIHk9IjM3NiIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM1NTU1NjgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSI1Ij5HWU08L3RleHQ+CjxsaW5lIHgxPSIxMTYiIHkxPSIxNjAiIHgyPSIxNTYiIHkyPSIxNjAiIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjUiLz4KPGxpbmUgeDE9IjExNiIgeTE9IjE2MCIgeDI9IjExNiIgeTI9IjE5MiIgc3Ryb2tlPSIjYzhmZjAwIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9IjAuNSIvPgo8bGluZSB4MT0iMzk2IiB5MT0iMTYwIiB4Mj0iMzU2IiB5Mj0iMTYwIiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC41Ii8+CjxsaW5lIHgxPSIzOTYiIHkxPSIxNjAiIHgyPSIzOTYiIHkyPSIxOTIiIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjUiLz4KPC9zdmc+">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0f;--surface:#111118;--card:#16161f;--accent:#c8ff00;--accent2:#ff6b35;--accent3:#00d4ff;--text:#f0f0f0;--muted:#555568;--border:#222230;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--text);font-family:'Cairo',sans-serif;min-height:100vh;overflow-x:hidden;padding-bottom:72px}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(200,255,0,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(200,255,0,0.025) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+.container{max-width:600px;margin:0 auto;padding:24px 16px 16px;position:relative;z-index:1}
+
+/* ── Bottom nav ── */
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(10,10,15,0.97);backdrop-filter:blur(16px);border-top:1px solid var(--border);display:flex;justify-content:center}
+.nav-btn{flex:1;max-width:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:9px 4px 11px;cursor:pointer;border:none;background:none;color:var(--muted);font-family:'Cairo',sans-serif;font-size:10px;font-weight:600;gap:3px;transition:color 0.2s;user-select:none}
+.nav-btn .nav-icon{font-size:19px;line-height:1}
+.nav-btn.active{color:var(--accent)}
+
+/* ── Pages ── */
+.page{display:none}.page.active{display:block}
+
+/* ── Modal ── */
+#modal{display:none;position:fixed;inset:0;z-index:300;align-items:flex-end;justify-content:center}
+#modal.open{display:flex}
+.modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px)}
+.modal-box{position:relative;z-index:1;width:100%;max-width:600px;background:var(--card);border:1px solid var(--border);border-radius:20px 20px 0 0;padding:22px 20px 34px;animation:slideUp 0.3s ease;max-height:88vh;overflow-y:auto}
+.modal-box::-webkit-scrollbar{display:none}
+.modal-handle{width:36px;height:4px;background:var(--border);border-radius:100px;margin:0 auto 18px}
+.modal-title{font-size:17px;font-weight:900;margin-bottom:4px}
+.modal-sub{font-size:12px;color:var(--muted);margin-bottom:18px}
+.modal-close{position:absolute;top:18px;left:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer}
+.modal-footer{margin-top:18px;display:flex;gap:8px}
+.modal-btn{flex:1;padding:12px;border-radius:10px;border:none;font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;cursor:pointer}
+.modal-btn.primary{background:var(--accent);color:#000}
+.modal-btn.secondary{background:var(--surface);border:1px solid var(--border);color:var(--muted)}
+
+/* ── Header ── */
+.header{text-align:center;margin-bottom:22px;animation:fadeDown 0.6s ease}
+.header h1{font-size:clamp(26px,7vw,44px);font-weight:900;line-height:1.1}
+.header h1 span{color:var(--accent)}
+.header p{color:var(--muted);margin-top:5px;font-size:13px}
+
+/* ── Streak banner ── */
+.streak-banner{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;gap:12px;animation:fadeUp 0.6s ease 0.05s both}
+.streak-fire{font-size:28px;line-height:1;flex-shrink:0}
+.streak-info{flex:1}
+.streak-num{font-size:22px;font-weight:900;color:var(--accent);line-height:1}
+.streak-label{font-size:11px;color:var(--muted);margin-top:2px}
+.week-dots{display:flex;gap:5px;flex-shrink:0}
+.week-dot{width:10px;height:10px;border-radius:50%;background:var(--border)}
+.week-dot.done{background:var(--accent)}
+.week-dot.today{border:2px solid var(--accent);background:transparent}
+
+/* ── Progress card ── */
+.progress-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:13px 18px;margin-bottom:16px;cursor:pointer;transition:border-color 0.2s;animation:fadeUp 0.6s ease 0.08s both;display:none}
+.progress-card:active{border-color:var(--accent)}
+.progress-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}
+.progress-label-text{font-size:12px;font-weight:700;color:var(--muted)}
+.progress-right{display:flex;align-items:center;gap:7px}
+.progress-count{font-size:12px;font-weight:700;color:var(--accent)}
+.progress-hint{font-size:10px;color:var(--muted);opacity:0.6}
+.progress-bar-bg{background:var(--border);border-radius:100px;height:6px;overflow:hidden}
+.progress-bar-fill{height:100%;background:linear-gradient(90deg,var(--accent),#a0ff00);border-radius:100px;transition:width 0.4s ease;width:0%}
+
+/* ── Day tabs ── */
+.day-tabs{display:flex;gap:7px;margin-bottom:14px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;animation:fadeUp 0.6s ease 0.12s both}
+.day-tabs::-webkit-scrollbar{display:none}
+.day-tab{flex-shrink:0;background:var(--card);border:1px solid var(--border);color:var(--muted);padding:8px 14px;border-radius:10px;cursor:pointer;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;transition:all 0.2s;white-space:nowrap;user-select:none}
+.day-tab.active{background:var(--accent);border-color:var(--accent);color:#000;font-weight:900}
+.day-tab.rest{opacity:0.35;cursor:default}
+
+/* ── Day content ── */
+.day-content{display:none;animation:fadeIn 0.25s ease}.day-content.active{display:block}
+.day-header{background:var(--card);border:1px solid var(--border);border-radius:16px 16px 0 0;padding:16px 18px;display:flex;align-items:center;gap:12px;border-bottom:none}
+.day-icon{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0}
+.day-icon.push{background:rgba(200,255,0,0.12)}.day-icon.pull{background:rgba(0,212,255,0.12)}.day-icon.legs{background:rgba(255,107,53,0.12)}.day-icon.upper{background:rgba(200,255,0,0.12)}.day-icon.lower{background:rgba(255,107,53,0.12)}
+.day-title{font-size:16px;font-weight:900}.day-subtitle{font-size:11px;color:var(--muted);margin-top:1px}
+.muscles-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.chip{font-size:10px;padding:2px 8px;border-radius:20px;font-weight:600}
+.chip.green{background:rgba(200,255,0,0.12);color:var(--accent)}.chip.blue{background:rgba(0,212,255,0.12);color:var(--accent3)}.chip.orange{background:rgba(255,107,53,0.12);color:var(--accent2)}
+
+/* ── Exercise list ── */
+.exercises-list{background:var(--card);border:1px solid var(--border);border-radius:0 0 16px 16px;overflow:hidden}
+.exercise-row{border-bottom:1px solid var(--border)}.exercise-row:last-child{border-bottom:none}
+.exercise-header{display:flex;align-items:center;padding:13px 16px;cursor:pointer;gap:11px;user-select:none;transition:background 0.15s}
+.exercise-header:active{background:rgba(255,255,255,0.02)}
+.ex-dot{width:9px;height:9px;border-radius:50%;border:2px solid var(--border);flex-shrink:0;transition:all 0.2s}
+.ex-dot.partial{border-color:var(--accent);background:rgba(200,255,0,0.3)}.ex-dot.full{border-color:var(--accent);background:var(--accent)}
+.ex-info{flex:1;min-width:0}
+.ex-name{font-size:13px;font-weight:700;line-height:1.3}.ex-name.all-done{text-decoration:line-through;opacity:0.45}
+.ex-muscle{font-size:11px;color:var(--muted);margin-top:1px}
+.ex-summary{display:flex;gap:5px;flex-shrink:0;align-items:center}
+.set-badge{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:3px 7px;font-size:11px;font-weight:700;color:var(--accent);white-space:nowrap}
+.expand-arrow{color:var(--muted);font-size:11px;transition:transform 0.25s;flex-shrink:0}
+.exercise-row.open .expand-arrow{transform:rotate(180deg)}
+.sets-panel{max-height:0;overflow:hidden;transition:max-height 0.3s ease;background:rgba(0,0,0,0.15)}
+.exercise-row.open .sets-panel{max-height:600px}
+.sets-inner{padding:10px 14px 13px;display:flex;flex-direction:column;gap:7px}
+.ex-tip{font-size:11px;color:#aaa;padding:7px 11px;background:rgba(200,255,0,0.04);border:1px solid rgba(200,255,0,0.1);border-radius:8px;line-height:1.5;margin-bottom:2px}
+.set-row{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;user-select:none;transition:all 0.15s}
+.set-row:active{background:rgba(200,255,0,0.03)}.set-row.set-done{border-color:rgba(200,255,0,0.3);background:rgba(200,255,0,0.05)}
+.set-check{width:20px;height:20px;border-radius:5px;border:2px solid var(--border);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;transition:all 0.2s;color:#000;font-weight:900}
+.set-row.set-done .set-check{background:var(--accent);border-color:var(--accent)}
+.set-label{font-size:13px;font-weight:700;flex:1}.set-label.done-text{color:var(--muted);text-decoration:line-through}
+.set-reps{font-size:11px;color:var(--muted)}.set-row.set-done .set-reps{color:var(--accent)}
+
+/* ── Add exercise row ── */
+.add-ex-btn{display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;color:var(--muted);font-size:13px;font-weight:600;border-top:1px solid var(--border);background:none;width:100%;font-family:'Cairo',sans-serif;transition:color 0.2s}
+.add-ex-btn:active{color:var(--accent)}
+
+/* ── Tips ── */
+.tips-card{background:var(--card);border:1px solid rgba(200,255,0,0.12);border-radius:14px;padding:15px 17px;margin-top:14px;animation:fadeUp 0.6s ease 0.2s both}
+.tips-title{font-size:11px;font-weight:700;color:var(--accent);margin-bottom:9px;text-transform:uppercase;letter-spacing:1px}
+.tip-item{display:flex;align-items:flex-start;gap:7px;font-size:12px;color:#888;line-height:1.5;margin-bottom:6px}.tip-item:last-child{margin-bottom:0}
+.tip-icon{font-size:13px;flex-shrink:0;margin-top:1px}
+.reset-btn{display:block;width:100%;margin-top:12px;background:none;border:1px solid var(--border);color:var(--muted);font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;padding:11px;border-radius:12px;cursor:pointer;transition:all 0.2s}
+.reset-btn:active{border-color:rgba(255,100,100,0.4);color:rgba(255,100,100,0.7)}
+
+/* ── Stats page ── */
+.page-header{text-align:center;margin-bottom:22px;animation:fadeDown 0.5s ease}
+.page-header h2{font-size:30px;font-weight:900;line-height:1.1}.page-header h2 span{color:var(--accent)}
+.page-header p{color:var(--muted);font-size:13px;margin-top:5px}
+
+.weeks-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.week-row{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;animation:fadeUp 0.4s ease both}
+.week-row-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.week-label{font-size:13px;font-weight:700}
+.week-badge{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
+.week-badge.perfect{background:rgba(200,255,0,0.15);color:var(--accent)}
+.week-badge.partial{background:rgba(255,107,53,0.15);color:var(--accent2)}
+.week-badge.empty{background:var(--surface);color:var(--muted)}
+.week-days{display:flex;gap:5px}
+.wday{flex:1;height:32px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--muted)}
+.wday.done{background:rgba(200,255,0,0.15);color:var(--accent)}
+.wday.rest-day{background:var(--surface);color:var(--border)}
+.wday.missed{background:var(--surface)}
+
+.stats-summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:20px}
+.summary-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center;animation:fadeUp 0.4s ease both}
+.summary-num{font-size:28px;font-weight:900;color:var(--accent);line-height:1}
+.summary-label{font-size:11px;color:var(--muted);margin-top:4px}
+
+/* ── Calorie page ── */
+.cal-form{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:16px;animation:fadeUp 0.4s ease both}
+.cal-form-title{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px}
+.form-row{margin-bottom:12px}
+.form-label{font-size:12px;color:var(--muted);font-weight:600;margin-bottom:5px;display:block}
+.form-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:var(--text);font-family:'Cairo',sans-serif;font-size:14px;outline:none}
+.form-input:focus{border-color:var(--accent)}
+.form-select{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:var(--text);font-family:'Cairo',sans-serif;font-size:13px;outline:none;cursor:pointer;appearance:none;-webkit-appearance:none}
+.calc-btn{width:100%;padding:13px;background:var(--accent);color:#000;border:none;border-radius:10px;font-family:'Cairo',sans-serif;font-size:14px;font-weight:900;cursor:pointer;margin-top:4px}
+.calc-btn:active{opacity:0.85}
+
+.cal-results{display:none;animation:fadeUp 0.4s ease}
+.cal-results.show{display:block}
+.cal-result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
+.cal-result-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center}
+.cal-result-num{font-size:26px;font-weight:900;color:var(--accent);line-height:1}
+.cal-result-unit{font-size:11px;color:var(--accent);font-weight:600}
+.cal-result-label{font-size:11px;color:var(--muted);margin-top:4px}
+.macro-bar{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
+.macro-title{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+.macro-row{display:flex;align-items:center;gap:10px;margin-bottom:9px}.macro-row:last-child{margin-bottom:0}
+.macro-name{font-size:12px;font-weight:600;width:80px;flex-shrink:0}
+.macro-track{flex:1;height:8px;background:var(--border);border-radius:100px;overflow:hidden}
+.macro-fill{height:100%;border-radius:100px}
+.macro-fill.p{background:#c8ff00}.macro-fill.c{background:#00d4ff}.macro-fill.f{background:#ff6b35}
+.macro-val{font-size:12px;font-weight:700;color:var(--text);width:50px;text-align:left;flex-shrink:0}
+.cal-note{font-size:11px;color:var(--muted);line-height:1.6;padding:12px 14px;background:var(--surface);border-radius:10px;border:1px solid var(--border)}
+
+/* ── Music page ── */
+.add-url-box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:15px;margin-bottom:16px;animation:fadeUp 0.4s ease both}
+.add-url-label{font-size:11px;font-weight:700;color:var(--accent);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px}
+.add-url-row{display:flex;gap:8px}
+.url-input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-family:'Cairo',sans-serif;font-size:13px;outline:none;direction:ltr;min-width:0}
+.url-input::placeholder{color:var(--muted)}.url-input:focus{border-color:var(--accent)}
+.add-btn{background:var(--accent);color:#000;border:none;border-radius:10px;padding:10px 14px;font-family:'Cairo',sans-serif;font-size:13px;font-weight:900;cursor:pointer;flex-shrink:0}
+.tracks-list{display:flex;flex-direction:column;gap:9px}
+.track-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.track-top{display:flex;align-items:center;padding:12px 13px;gap:9px;cursor:pointer}
+.track-source{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.track-source.yt{background:rgba(255,0,0,0.12)}.track-source.sc{background:rgba(255,107,53,0.12)}
+.track-info{flex:1;min-width:0}
+.track-type{font-size:10px;font-weight:700;margin-bottom:1px}.track-type.yt{color:#ff4444}.track-type.sc{color:var(--accent2)}
+.track-url{font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr}
+.track-expand-btn{background:none;border:none;color:var(--muted);font-size:17px;cursor:pointer;flex-shrink:0;padding:3px;transition:transform 0.25s}
+.track-card.open .track-expand-btn{transform:rotate(180deg)}
+.track-del{background:none;border:none;color:var(--muted);font-size:15px;cursor:pointer;flex-shrink:0;padding:3px}
+.track-del:active{color:#ff4444}
+.track-embed{max-height:0;overflow:hidden;transition:max-height 0.35s ease}
+.track-card.open .track-embed{max-height:400px}
+.yt-open-box{padding:10px 12px 12px}
+.yt-thumb-wrap{position:relative;border-radius:9px;overflow:hidden;margin-bottom:9px;background:#111}
+.yt-thumb{width:100%;display:block;opacity:0.45;aspect-ratio:16/9;object-fit:cover}
+.yt-thumb-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);font-weight:600}
+.yt-open-btn{display:flex;align-items:center;justify-content:center;width:100%;padding:11px;background:rgba(255,0,0,0.1);border:1px solid rgba(255,0,0,0.2);border-radius:9px;color:#ff4444;font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;text-decoration:none}
+.music-empty{text-align:center;padding:44px 20px;color:var(--muted)}
+.music-empty span{font-size:38px;display:block;margin-bottom:10px}
+.music-empty p{font-size:13px;line-height:1.7}
+
+@keyframes fadeDown{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+</style>
+</head>
+<body>
+
+<!-- Modal (shared) -->
+<div id="modal">
+  <div class="modal-backdrop" onclick="closeModal()"></div>
+  <div class="modal-box" id="modalBox">
+    <div class="modal-handle"></div>
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ══ WORKOUT PAGE ══ -->
+<div id="page-workout" class="page active">
+<div class="container">
+  <div class="header">
+    <div style="margin:0 auto 14px;width:90px;height:90px;border-radius:50%;overflow:hidden;border:2px solid rgba(200,255,0,0.3);flex-shrink:0">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyNTYiIGZpbGw9IiMxMTExMTgiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyNDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNyA1IiBvcGFjaXR5PSIwLjMiLz4KPHJlY3QgeD0iNzIiIHk9IjI0MCIgd2lkdGg9IjM2OCIgaGVpZ2h0PSIyMCIgcng9IjEwIiBmaWxsPSIjYzhmZjAwIi8+CjxyZWN0IHg9IjcwIiB5PSIxOTYiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxMDgiIHJ4PSI3IiBmaWxsPSIjYzhmZjAwIi8+CjxyZWN0IHg9IjcwIiB5PSIxOTYiIHdpZHRoPSI5IiBoZWlnaHQ9IjEwOCIgcng9IjciIGZpbGw9IiM3ZmFhMDAiLz4KPHJlY3QgeD0iMTA4IiB5PSIyMTAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI4MCIgcng9IjUiIGZpbGw9IiNjOGZmMDAiLz4KPHJlY3QgeD0iMTA4IiB5PSIyMTAiIHdpZHRoPSI2IiBoZWlnaHQ9IjgwIiByeD0iNSIgZmlsbD0iIzdmYWEwMCIvPgo8cmVjdCB4PSIzODQiIHk9IjIxMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjgwIiByeD0iNSIgZmlsbD0iI2M4ZmYwMCIvPgo8cmVjdCB4PSIzOTgiIHk9IjIxMCIgd2lkdGg9IjYiIGhlaWdodD0iODAiIHJ4PSI1IiBmaWxsPSIjN2ZhYTAwIi8+CjxyZWN0IHg9IjQxMCIgeT0iMTk2IiB3aWR0aD0iMzIiIGhlaWdodD0iMTA4IiByeD0iNyIgZmlsbD0iI2M4ZmYwMCIvPgo8cmVjdCB4PSI0MTAiIHk9IjE5NiIgd2lkdGg9IjkiIGhlaWdodD0iMTA4IiByeD0iNyIgZmlsbD0iIzdmYWEwMCIvPgo8cmVjdCB4PSIyMjYiIHk9IjI0MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzBhMGEwZiIgb3BhY2l0eT0iMC4yIi8+CjxsaW5lIHgxPSIyMzYiIHkxPSIyNDMiIHgyPSIyMzYiIHkyPSIyNTciIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuNSIvPgo8bGluZSB4MT0iMjQ2IiB5MT0iMjQzIiB4Mj0iMjQ2IiB5Mj0iMjU3IiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjUiLz4KPGxpbmUgeDE9IjI1NiIgeTE9IjI0MyIgeDI9IjI1NiIgeTI9IjI1NyIgc3Ryb2tlPSIjYzhmZjAwIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC41Ii8+CjxsaW5lIHgxPSIyNjYiIHkxPSIyNDMiIHgyPSIyNjYiIHkyPSIyNTciIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuNSIvPgo8bGluZSB4MT0iMjc2IiB5MT0iMjQzIiB4Mj0iMjc2IiB5Mj0iMjU3IiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjUiLz4KPHRleHQgeD0iMjU2IiB5PSIzMzQiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ0IiBmb250LXdlaWdodD0iOTAwIiBmaWxsPSIjYzhmZjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMSI+QUxTSEFNQVJJPC90ZXh0Pgo8Y2lyY2xlIGN4PSIxOTYiIGN5PSIzNTIiIHI9IjMiIGZpbGw9IiNjOGZmMDAiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMzUyIiByPSIzIiBmaWxsPSIjYzhmZjAwIi8+CjxjaXJjbGUgY3g9IjMxNiIgY3k9IjM1MiIgcj0iMyIgZmlsbD0iI2M4ZmYwMCIvPgo8dGV4dCB4PSIyNTYiIHk9IjM3NiIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM1NTU1NjgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSI1Ij5HWU08L3RleHQ+CjxsaW5lIHgxPSIxMTYiIHkxPSIxNjAiIHgyPSIxNTYiIHkyPSIxNjAiIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjUiLz4KPGxpbmUgeDE9IjExNiIgeTE9IjE2MCIgeDI9IjExNiIgeTI9IjE5MiIgc3Ryb2tlPSIjYzhmZjAwIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9IjAuNSIvPgo8bGluZSB4MT0iMzk2IiB5MT0iMTYwIiB4Mj0iMzU2IiB5Mj0iMTYwIiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC41Ii8+CjxsaW5lIHgxPSIzOTYiIHkxPSIxNjAiIHgyPSIzOTYiIHkyPSIxOTIiIHN0cm9rZT0iI2M4ZmYwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjUiLz4KPC9zdmc+" width="90" height="90" style="display:block;width:100%;height:100%">
+    </div>
+    <h1>Workout<br><span>Schedule</span></h1>
+    <p>٥ أيام تمرين — كل عضلة مرتين في الأسبوع</p>
+  </div>
+
+  <div class="streak-banner" id="streakBanner">
+    <div class="streak-fire">🔥</div>
+    <div class="streak-info">
+      <div class="streak-num" id="streakNum">0</div>
+      <div class="streak-label">أسابيع متواصلة</div>
+    </div>
+    <div class="week-dots" id="weekDots"></div>
+  </div>
+
+  <div class="progress-card" id="progressCard" onclick="openDaySummary()">
+    <div class="progress-top">
+      <span class="progress-label-text">تقدم اليوم</span>
+      <div class="progress-right">
+        <span class="progress-count" id="progressText">0 / 0 سيت</span>
+        <span class="progress-hint">اضغط للتفاصيل ›</span>
+      </div>
+    </div>
+    <div class="progress-bar-bg"><div class="progress-bar-fill" id="progressFill"></div></div>
+  </div>
+
+  <div class="day-tabs" id="dayTabs"></div>
+  <div id="dayContents"></div>
+
+  <div class="tips-card">
+    <div class="tips-title">نصائح للمبتدئ</div>
+    <div class="tip-item"><span class="tip-icon">🎯</span><span>الشكل الصح أهم من الوزن — تعلم الحركة قبل ما تثقّل</span></div>
+    <div class="tip-item"><span class="tip-icon">⏱️</span><span>راحة 90 ثانية بين كل سيت</span></div>
+    <div class="tip-item"><span class="tip-icon">📈</span><span>زد الوزن بس لما تكمل كل السيتات بسهولة</span></div>
+    <div class="tip-item"><span class="tip-icon">🥩</span><span>1.6 غرام بروتين لكل كغ من وزنك يومياً</span></div>
+    <div class="tip-item"><span class="tip-icon">😴</span><span>7-8 ساعات نوم — العضل يبني وقت النوم</span></div>
+  </div>
+  <button class="reset-btn" onclick="resetWeek()">🔄 إعادة تعيين الأسبوع</button>
+</div>
+</div>
+
+<!-- ══ STATS PAGE ══ -->
+<div id="page-stats" class="page">
+<div class="container">
+  <div class="page-header">
+    <h2>سجل<br><span>التقدم 📊</span></h2>
+    <p>تتبع أسابيعك وشوف تطورك</p>
+  </div>
+  <div class="stats-summary" id="statsSummary"></div>
+  <div class="weeks-grid" id="weeksGrid"></div>
+</div>
+</div>
+
+<!-- ══ CUSTOMIZE PAGE ══ -->
+<div id="page-custom" class="page">
+<div class="container">
+  <div class="page-header">
+    <h2>تخصيص<br><span>التمارين ⚙️</span></h2>
+    <p>أضف أو احذف تمارين من أي يوم</p>
+  </div>
+  <div id="customDayTabs" class="day-tabs"></div>
+  <div id="customContent"></div>
+</div>
+</div>
+
+<!-- ══ CALORIES PAGE ══ -->
+<div id="page-cal" class="page">
+<div class="container">
+  <div class="page-header">
+    <h2>حاسبة<br><span>السعرات 🔢</span></h2>
+    <p>احسب احتياجك اليومي من السعرات والبروتين</p>
+  </div>
+
+  <div class="cal-form">
+    <div class="cal-form-title">بياناتك</div>
+    <div class="form-row">
+      <label class="form-label">الوزن (كغ)</label>
+      <input class="form-input" id="calWeight" type="number" placeholder="70" min="30" max="200">
+    </div>
+    <div class="form-row">
+      <label class="form-label">الطول (سم)</label>
+      <input class="form-input" id="calHeight" type="number" placeholder="175" min="100" max="250">
+    </div>
+    <div class="form-row">
+      <label class="form-label">العمر</label>
+      <input class="form-input" id="calAge" type="number" placeholder="22" min="10" max="80">
+    </div>
+    <div class="form-row">
+      <label class="form-label">الجنس</label>
+      <select class="form-select" id="calGender">
+        <option value="m">ذكر</option>
+        <option value="f">أنثى</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label class="form-label">الهدف</label>
+      <select class="form-select" id="calGoal">
+        <option value="cut">حرق دهون</option>
+        <option value="maintain">الحفاظ على الوزن</option>
+        <option value="bulk" selected>بناء عضل</option>
+      </select>
+    </div>
+    <button class="calc-btn" onclick="calcCalories()">احسب ←</button>
+  </div>
+
+  <div class="cal-results" id="calResults">
+    <div class="cal-result-grid">
+      <div class="cal-result-card">
+        <div class="cal-result-num" id="resCalories">0</div>
+        <div class="cal-result-unit">سعرة</div>
+        <div class="cal-result-label">السعرات اليومية</div>
+      </div>
+      <div class="cal-result-card">
+        <div class="cal-result-num" id="resProtein">0</div>
+        <div class="cal-result-unit">غرام</div>
+        <div class="cal-result-label">البروتين اليومي</div>
+      </div>
+    </div>
+    <div class="macro-bar">
+      <div class="macro-title">توزيع الماكروز</div>
+      <div class="macro-row">
+        <div class="macro-name">بروتين 🥩</div>
+        <div class="macro-track"><div class="macro-fill p" id="barP" style="width:0%"></div></div>
+        <div class="macro-val" id="valP">0g</div>
+      </div>
+      <div class="macro-row">
+        <div class="macro-name">كارب 🍚</div>
+        <div class="macro-track"><div class="macro-fill c" id="barC" style="width:0%"></div></div>
+        <div class="macro-val" id="valC">0g</div>
+      </div>
+      <div class="macro-row">
+        <div class="macro-name">دهون 🥑</div>
+        <div class="macro-track"><div class="macro-fill f" id="barF" style="width:0%"></div></div>
+        <div class="macro-val" id="valF">0g</div>
+      </div>
+    </div>
+    <div class="cal-note" id="calNote"></div>
+  </div>
+</div>
+</div>
+
+
+<!-- Bottom nav -->
+<nav class="bottom-nav">
+  <button class="nav-btn active" id="nav-workout" onclick="switchPage('workout')"><span class="nav-icon">🏋️</span><span>تمرين</span></button>
+  <button class="nav-btn" id="nav-stats" onclick="switchPage('stats')"><span class="nav-icon">📊</span><span>تقدم</span></button>
+  <button class="nav-btn" id="nav-custom" onclick="switchPage('custom')"><span class="nav-icon">⚙️</span><span>تخصيص</span></button>
+  <button class="nav-btn" id="nav-cal" onclick="switchPage('cal')"><span class="nav-icon">🔢</span><span>سعرات</span></button>
+</nav>
+
+<div style="position:fixed;bottom:80px;left:14px;z-index:50;pointer-events:none">
+  <span style="font-family:'Cairo',sans-serif;font-size:10px;font-weight:700;color:rgba(200,255,0,0.2);letter-spacing:2px;text-transform:uppercase">Alshamari</span>
+</div>
+
+<script>
+// ══════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════
+const DEFAULT_SCHEDULE = [
+  {id:'mon',label:'الاثنين',type:'push',icon:'🫸',title:'Push — دفع',subtitle:'صدر + أكتاف + ترايسبس',
+   muscles:[{label:'صدر',color:'green'},{label:'أكتاف',color:'green'},{label:'ترايسبس',color:'green'}],
+   exercises:[
+    {name:'Bench Press',sets:3,reps:'10',tip:'ظهرك ثابت، نزّل ببطء'},
+    {name:'Incline Dumbbell Press',sets:3,reps:'10',tip:'زاوية 30-45 درجة'},
+    {name:'Machine Chest Fly',sets:3,reps:'12',tip:'احس بالمط في الصدر'},
+    {name:'Dumbbell Shoulder Press',sets:3,reps:'10',tip:'لا ترفع بقوة'},
+    {name:'Lateral Raises',sets:3,reps:'15',tip:'وزن خفيف، ارفع ببطء'},
+    {name:'Tricep Pushdown',sets:3,reps:'12',tip:'كوعك ثابت بجانبك'},
+   ]},
+  {id:'tue',label:'الثلاثاء',type:'pull',icon:'🫷',title:'Pull — سحب',subtitle:'ظهر + بايسبس',
+   muscles:[{label:'ظهر',color:'blue'},{label:'بايسبس',color:'blue'}],
+   exercises:[
+    {name:'Lat Pulldown',sets:3,reps:'10',tip:'اسحب للصدر مو الرقبة'},
+    {name:'Seated Cable Row',sets:3,reps:'10',tip:'ظهرك مستقيم'},
+    {name:'Dumbbell Row',sets:3,reps:'10',tip:'ضع ركبتك على المقعد'},
+    {name:'Face Pulls',sets:3,reps:'15',tip:'مهم لصحة الكتف'},
+    {name:'Dumbbell Bicep Curl',sets:3,reps:'12',tip:'الحركة من الكوع فقط'},
+    {name:'Hammer Curl',sets:3,reps:'12',tip:'إمسك عمودي كالمطرقة'},
+   ]},
+  {id:'wed',label:'الأربعاء',type:'legs',icon:'🦵',title:'Legs — أرجل',subtitle:'أرجل كاملة + سمانة',
+   muscles:[{label:'كوادز',color:'orange'},{label:'هامسترينج',color:'orange'},{label:'سمانة',color:'orange'}],
+   exercises:[
+    {name:'Goblet Squat',sets:3,reps:'12',tip:'ظهرك مستقيم'},
+    {name:'Leg Press',sets:3,reps:'12',tip:'لا تقفل الركبة'},
+    {name:'Romanian Deadlift',sets:3,reps:'10',tip:'احس بشد الهامسترينج'},
+    {name:'Leg Extension',sets:3,reps:'15',tip:'ابدأ بوزن خفيف'},
+    {name:'Leg Curl',sets:3,reps:'15',tip:'لا ترفع وركك'},
+    {name:'Calf Raises',sets:3,reps:'20',tip:'ارفع ببطء على الأطراف'},
+   ]},
+  {id:'thu',label:'الخميس',type:'upper',icon:'💪',title:'Upper — الجسم العلوي',subtitle:'صدر + ظهر + أكتاف',
+   muscles:[{label:'صدر',color:'green'},{label:'ظهر',color:'blue'},{label:'أكتاف',color:'green'}],
+   exercises:[
+    {name:'Dumbbell Bench Press',sets:3,reps:'10',tip:'يحمّل كل جانب لحاله'},
+    {name:'Cable Row Wide Grip',sets:3,reps:'10',tip:'الظهر العلوي'},
+    {name:'Machine Shoulder Press',sets:3,reps:'10',tip:'أكثر أمان للمبتدئ'},
+    {name:'Assisted Pull-ups',sets:3,reps:'8',tip:'استخدم المكينة المساعدة'},
+    {name:'Pec Deck',sets:3,reps:'12',tip:'لا تقفل الذراعين'},
+    {name:'Cable Lateral Raise',sets:3,reps:'15',tip:'الكابل يبقي التوتر'},
+   ]},
+  {id:'fri',label:'الجمعة',type:'lower',icon:'🏃',title:'Lower + Arms',subtitle:'أرجل + ذراعين',
+   muscles:[{label:'أرجل',color:'orange'},{label:'بايسبس',color:'blue'},{label:'ترايسبس',color:'green'}],
+   exercises:[
+    {name:'Hack Squat',sets:3,reps:'12',tip:'أسهل على الظهر'},
+    {name:'Walking Lunges',sets:3,reps:'10 لكل رجل',tip:'ركبتك لا تتجاوز أصابعك'},
+    {name:'Seated Leg Curl',sets:3,reps:'12',tip:'ببطء في الرجوع'},
+    {name:'EZ Bar Curl',sets:3,reps:'12',tip:'أريح للمعصم'},
+    {name:'Overhead Tricep Extension',sets:3,reps:'12',tip:'كوعك قريب من رأسك'},
+    {name:'Calf Raises',sets:3,reps:'20',tip:'ارفع ببطء'},
+   ]},
+  {id:'sat',label:'السبت',rest:true},
+  {id:'sun',label:'الأحد',rest:true},
+];
+
+// ══════════════════════════════════════════════
+// STATE
+// ══════════════════════════════════════════════
+const KEYS = {state:'wk_state_v3', schedule:'wk_schedule_v1', weeks:'wk_weeks_v1'};
+let schedule, state, weekHistory;
+
+function loadAll() {
+  // schedule (custom)
+  try { schedule = JSON.parse(localStorage.getItem(KEYS.schedule)); } catch(e){}
+  if(!schedule) schedule = JSON.parse(JSON.stringify(DEFAULT_SCHEDULE));
+
+  // workout state
+  try { state = JSON.parse(localStorage.getItem(KEYS.state))||{}; } catch(e){ state={}; }
+  schedule.forEach(day => {
+    if(day.rest) return;
+    if(!state[day.id]) state[day.id]={};
+    day.exercises.forEach((ex,ei) => {
+      if(!state[day.id][ei]) state[day.id][ei]=new Array(ex.sets).fill(false);
+    });
+  });
+
+  // week history
+  try { weekHistory = JSON.parse(localStorage.getItem(KEYS.weeks))||[]; } catch(e){ weekHistory=[]; }
+
+}
+
+function save(key) {
+  const map={state,schedule,weeks:weekHistory};
+  const val=key==='weeks'?weekHistory:key==='schedule'?schedule:state;
+  try { localStorage.setItem(KEYS[key], JSON.stringify(val)); } catch(e){}
+}
+
+// ══════════════════════════════════════════════
+// WEEK HISTORY — save on reset
+// ══════════════════════════════════════════════
+function getWeekKey() {
+  const d=new Date(); const jan1=new Date(d.getFullYear(),0,1);
+  return d.getFullYear()+'W'+Math.ceil(((d-jan1)/86400000+jan1.getDay()+1)/7);
+}
+
+function saveCurrentWeekSnapshot() {
+  const key=getWeekKey();
+  const workoutDays=schedule.filter(d=>!d.rest);
+  const daysDone=workoutDays.filter(d=>{
+    if(!state[d.id]) return false;
+    return d.exercises.every((_,ei)=>{
+      const sets=state[d.id][ei]||[];
+      return sets.some(Boolean);
+    });
+  }).length;
+  const existing=weekHistory.findIndex(w=>w.key===key);
+  const snap={key,daysDone,total:workoutDays.length,days:{}};
+  workoutDays.forEach(d=>{
+    let done=0,total=0;
+    d.exercises.forEach((_,ei)=>{ const s=state[d.id][ei]||[]; done+=s.filter(Boolean).length; total+=_.sets; });
+    snap.days[d.id]={done,total};
+  });
+  if(existing>=0) weekHistory[existing]=snap; else weekHistory.unshift(snap);
+  if(weekHistory.length>12) weekHistory=weekHistory.slice(0,12);
+  save('weeks');
+}
+
+function calcStreak() {
+  let streak=0;
+  const workoutDays=schedule.filter(d=>!d.rest);
+  for(let i=0;i<weekHistory.length;i++){
+    const w=weekHistory[i];
+    if(w.daysDone>=workoutDays.length) streak++; else break;
+  }
+  return streak;
+}
+
+// ══════════════════════════════════════════════
+// PAGE SWITCHING
+// ══════════════════════════════════════════════
+const PAGES=['workout','stats','custom','cal'];
+function switchPage(page) {
+  PAGES.forEach(p=>{
+    document.getElementById('page-'+p).classList.toggle('active',p===page);
+    document.getElementById('nav-'+p).classList.toggle('active',p===page);
+  });
+  if(page==='stats') renderStats();
+  if(page==='custom') renderCustom();
+}
+
+// ══════════════════════════════════════════════
+// MODAL
+// ══════════════════════════════════════════════
+function openModal(html) {
+  document.getElementById('modalContent').innerHTML=html;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+// ══════════════════════════════════════════════
+// WORKOUT UI
+// ══════════════════════════════════════════════
+let currentDay='mon';
+
+function buildWorkoutUI() {
+  const tabs=document.getElementById('dayTabs');
+  const contents=document.getElementById('dayContents');
+  tabs.innerHTML=''; contents.innerHTML='';
+
+  const today=['sun','mon','tue','wed','thu','fri','sat'][new Date().getDay()];
+  schedule.forEach(day=>{
+    const isToday=day.id===today;
+    const tab=document.createElement('button');
+    tab.className='day-tab'+(day.rest?' rest':'')+(day.id===currentDay?' active':'');
+    tab.textContent=day.label+(isToday&&!day.rest?' 🔥':'');
+    tab.dataset.id=day.id;
+    if(!day.rest) tab.onclick=()=>switchDay(day.id);
+    tabs.appendChild(tab);
+    if(day.rest) return;
+
+    const div=document.createElement('div');
+    div.className='day-content'+(day.id===currentDay?' active':'');
+    div.id='content-'+day.id;
+
+    const chips=day.muscles.map(m=>`<span class="chip ${m.color}">${m.label}</span>`).join('');
+    const exRows=day.exercises.map((ex,ei)=>{
+      const sets=state[day.id][ei]||new Array(ex.sets).fill(false);
+      const done=sets.filter(Boolean).length;
+      const all=done===ex.sets;
+      const dotCls=all?' full':done>0?' partial':'';
+      const setItems=sets.map((d,si)=>`
+        <div class="set-row${d?' set-done':''}" id="sr-${day.id}-${ei}-${si}" onclick="toggleSet('${day.id}',${ei},${si})">
+          <div class="set-check">${d?'✓':''}</div>
+          <div class="set-label${d?' done-text':''}">سيت ${si+1}</div>
+          <div class="set-reps">${ex.reps} تكرار</div>
+        </div>`).join('');
+      const tipHtml=ex.tip?`<div class="ex-tip">💡 ${ex.tip}</div>`:'';
+      return `
+        <div class="exercise-row" id="er-${day.id}-${ei}">
+          <div class="exercise-header" onclick="toggleExpand('${day.id}',${ei})">
+            <div class="ex-dot${dotCls}" id="dot-${day.id}-${ei}"></div>
+            <div class="ex-info">
+              <div class="ex-name${all?' all-done':''}" id="en-${day.id}-${ei}">${ex.name}</div>
+              <div class="ex-muscle">${ex.sets} سيت × ${ex.reps}</div>
+            </div>
+            <div class="ex-summary">
+              <div class="set-badge" id="sc-${day.id}-${ei}">${done}/${ex.sets}</div>
+            </div>
+            <div class="expand-arrow">▾</div>
+          </div>
+          <div class="sets-panel"><div class="sets-inner">${tipHtml}${setItems}</div></div>
+        </div>`;
+    }).join('');
+
+    div.innerHTML=`
+      <div class="day-header">
+        <div class="day-icon ${day.type}">${day.icon}</div>
+        <div><div class="day-title">${day.title}</div><div class="day-subtitle">${day.subtitle}</div>
+        <div class="muscles-chips">${chips}</div></div>
+      </div>
+      <div class="exercises-list">${exRows}</div>`;
+    contents.appendChild(div);
+  });
+
+  document.getElementById('progressCard').style.display='block';
+  updateProgress(currentDay);
+  renderStreakBanner();
+}
+
+function renderStreakBanner() {
+  document.getElementById('streakNum').textContent=calcStreak();
+  const workoutIds=schedule.filter(d=>!d.rest).map(d=>d.id);
+  const dots=document.getElementById('weekDots');
+  dots.innerHTML=workoutIds.map(id=>{
+    const sets=state[id]||{};
+    const day=schedule.find(d=>d.id===id);
+    const hasDone=day&&day.exercises.some((_,ei)=>(state[id][ei]||[]).some(Boolean));
+    return `<div class="week-dot${hasDone?' done':''}"></div>`;
+  }).join('');
+}
+
+function toggleExpand(dayId,ei) {
+  document.getElementById(`er-${dayId}-${ei}`).classList.toggle('open');
+}
+
+function toggleSet(dayId,ei,si) {
+  if(!state[dayId]) state[dayId]={};
+  if(!state[dayId][ei]) state[dayId][ei]=[];
+  state[dayId][ei][si]=!state[dayId][ei][si];
+  save('state');
+  const done=state[dayId][ei][si];
+  const row=document.getElementById(`sr-${dayId}-${ei}-${si}`);
+  row.classList.toggle('set-done',done);
+  row.querySelector('.set-check').textContent=done?'✓':'';
+  row.querySelector('.set-label').className='set-label'+(done?' done-text':'');
+  const sets=state[dayId][ei];
+  const doneSets=sets.filter(Boolean).length;
+  const total=sets.length;
+  const all=doneSets===total;
+  document.getElementById(`dot-${dayId}-${ei}`).className='ex-dot'+(all?' full':doneSets>0?' partial':'');
+  document.getElementById(`sc-${dayId}-${ei}`).textContent=`${doneSets}/${total}`;
+  document.getElementById(`en-${dayId}-${ei}`).className='ex-name'+(all?' all-done':'');
+  updateProgress(dayId);
+  renderStreakBanner();
+}
+
+function switchDay(id) {
+  currentDay=id;
+  document.querySelectorAll('.day-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelector(`[data-id="${id}"]`).classList.add('active');
+  document.querySelectorAll('.day-content').forEach(c=>c.classList.remove('active'));
+  document.getElementById('content-'+id).classList.add('active');
+  updateProgress(id);
+}
+
+function updateProgress(dayId) {
+  const day=schedule.find(d=>d.id===dayId);
+  if(!day||day.rest) return;
+  let done=0,total=0;
+  day.exercises.forEach((ex,ei)=>{ const s=state[dayId][ei]||[]; done+=s.filter(Boolean).length; total+=ex.sets; });
+  document.getElementById('progressText').textContent=`${done} / ${total} سيت`;
+  document.getElementById('progressFill').style.width=total?(done/total*100)+'%':'0%';
+}
+
+function openDaySummary() {
+  const day=schedule.find(d=>d.id===currentDay);
+  if(!day||day.rest) return;
+  let done=0,total=0;
+  day.exercises.forEach((ex,ei)=>{ const s=state[currentDay][ei]||[]; done+=s.filter(Boolean).length; total+=ex.sets; });
+  const body=done===0
+    ?`<div class="music-empty"><span>💤</span><p>ما سويت شي اليوم بعد</p></div>`
+    :day.exercises.map((ex,ei)=>{
+      const s=state[currentDay][ei]||new Array(ex.sets).fill(false);
+      const chips=s.map((d,si)=>`<span class="modal-set-chip ${d?'done':'miss'}">سيت ${si+1}${d?' ✓':''}</span>`).join('');
+      return `<div class="modal-ex-item"><div class="modal-ex-name">${ex.name}</div><div class="modal-sets">${chips}</div></div>`;
+    }).join('');
+  openModal(`<div class="modal-title">${day.title}</div><div class="modal-sub">${done} من ${total} سيت مكتمل</div>${body}`);
+}
+
+function resetWeek() {
+  if(!confirm('تبي تعيد الأسبوع من البداية؟')) return;
+  saveCurrentWeekSnapshot();
+  schedule.forEach(day=>{ if(day.rest) return; state[day.id]={}; day.exercises.forEach((ex,ei)=>{ state[day.id][ei]=new Array(ex.sets).fill(false); }); });
+  save('state');
+  buildWorkoutUI();
+  switchDay(currentDay);
+}
+
+// ══════════════════════════════════════════════
+// STATS
+// ══════════════════════════════════════════════
+function renderStats() {
+  const workoutDays=schedule.filter(d=>!d.rest);
+  const streak=calcStreak();
+  const totalWeeks=weekHistory.length;
+  const perfectWeeks=weekHistory.filter(w=>w.daysDone>=workoutDays.length).length;
+
+  document.getElementById('statsSummary').innerHTML=`
+    <div class="summary-card"><div class="summary-num">${streak}🔥</div><div class="summary-label">streak حالي</div></div>
+    <div class="summary-card"><div class="summary-num">${totalWeeks}</div><div class="summary-label">أسابيع مسجّلة</div></div>
+    <div class="summary-card"><div class="summary-num">${perfectWeeks}</div><div class="summary-label">أسابيع مكتملة</div></div>
+    <div class="summary-card"><div class="summary-num">${workoutDays.length*totalWeeks}</div><div class="summary-label">أيام تمرين</div></div>`;
+
+  if(!weekHistory.length){
+    document.getElementById('weeksGrid').innerHTML=`<div class="music-empty"><span>📊</span><p>ما في سجل بعد<br>أكمل أسبوع واضغط "إعادة تعيين"</p></div>`;
+    return;
+  }
+
+  document.getElementById('weeksGrid').innerHTML=weekHistory.map((w,i)=>{
+    const badge=w.daysDone>=workoutDays.length?'perfect':w.daysDone>0?'partial':'empty';
+    const label=badge==='perfect'?'مكتمل ✓':badge==='partial'?`${w.daysDone}/${w.total} أيام`:'لا يوجد';
+    const dayDots=workoutDays.map(d=>{
+      const dd=w.days&&w.days[d.id];
+      const cls=dd&&dd.done>0?'done':'missed';
+      return `<div class="wday ${cls}" title="${d.label}">${d.label.charAt(0)}</div>`;
+    }).join('');
+    return `<div class="week-row" style="animation-delay:${i*0.05}s">
+      <div class="week-row-top">
+        <div class="week-label">الأسبوع ${i===0?'الحالي':i===1?'الماضي':(i+1)+'#'}</div>
+        <div class="week-badge ${badge}">${label}</div>
+      </div>
+      <div class="week-days">${dayDots}</div>
+    </div>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════════════
+// CUSTOMIZE
+// ══════════════════════════════════════════════
+let customDay='mon';
+
+function renderCustom() {
+  const tabs=document.getElementById('customDayTabs');
+  // Show ALL 7 days — rest days shown dimmed with ability to toggle
+  tabs.innerHTML=schedule.map(d=>{
+    const isRest=d.rest;
+    const isActive=d.id===customDay;
+    return `<button class="day-tab${isRest?' rest':''}${isActive?' active':''}" onclick="setCustomDay('${d.id}')">${d.label}${isRest?' 😴':''}</button>`;
+  }).join('');
+  renderCustomExercises();
+}
+
+function setCustomDay(id){ customDay=id; renderCustom(); }
+
+function toggleDayRest(dayId) {
+  const day=schedule.find(d=>d.id===dayId);
+  if(!day) return;
+  if(day.rest) {
+    // Convert rest → workout (use default exercises from DEFAULT_SCHEDULE or empty)
+    const defaultDay=DEFAULT_SCHEDULE.find(d=>d.id===dayId);
+    day.rest=false;
+    day.title=defaultDay?defaultDay.title:(day.label+' — تمرين');
+    day.subtitle=defaultDay?defaultDay.subtitle:'تمارين مخصصة';
+    day.type=defaultDay?defaultDay.type:'push';
+    day.icon=defaultDay?defaultDay.icon:'💪';
+    day.muscles=defaultDay?defaultDay.muscles:[];
+    day.exercises=defaultDay?JSON.parse(JSON.stringify(defaultDay.exercises)):[];
+    state[dayId]={};
+    day.exercises.forEach((ex,ei)=>{ state[dayId][ei]=new Array(ex.sets).fill(false); });
+  } else {
+    // Convert workout → rest
+    const workoutDaysLeft=schedule.filter(d=>!d.rest&&d.id!==dayId).length;
+    if(workoutDaysLeft<1){ alert('لازم يكون عندك يوم تمرين واحد على الأقل!'); return; }
+    day.rest=true;
+    day.exercises=[];
+    delete state[dayId];
+  }
+  save('schedule'); save('state');
+  renderCustom();
+  buildWorkoutUI();
+  switchDay(schedule.find(d=>!d.rest)?.id||'mon');
+}
+
+function renderCustomExercises() {
+  const day=schedule.find(d=>d.id===customDay);
+
+  if(day.rest) {
+    // Rest day view — show toggle button to make it workout
+    document.getElementById('customContent').innerHTML=`
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px 20px;text-align:center;margin-bottom:14px">
+        <div style="font-size:36px;margin-bottom:12px">😴</div>
+        <div style="font-size:15px;font-weight:700;margin-bottom:6px">${day.label} — يوم راحة</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:20px">تبي تحوله ليوم تمرين؟</div>
+        <button onclick="toggleDayRest('${day.id}')" style="background:var(--accent);color:#000;border:none;border-radius:10px;padding:11px 24px;font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;cursor:pointer">
+          تحويل ليوم تمرين 💪
+        </button>
+      </div>`;
+    return;
+  }
+
+  // Workout day view
+  const exRows=day.exercises.length
+    ? day.exercises.map((ex,ei)=>`
+        <div class="exercise-header" style="justify-content:space-between">
+          <div class="ex-info">
+            <div class="ex-name">${ex.name}</div>
+            <div class="ex-muscle">${ex.sets} سيت × ${ex.reps}</div>
+          </div>
+          <div style="display:flex;gap:6px;align-items:center">
+            <button onclick="editExercise('${customDay}',${ei})" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);border-radius:7px;padding:5px 10px;font-size:12px;cursor:pointer;font-family:'Cairo',sans-serif">تعديل</button>
+            <button onclick="deleteExercise('${customDay}',${ei})" style="background:none;border:none;color:var(--muted);font-size:16px;cursor:pointer;padding:4px">🗑</button>
+          </div>
+        </div>`).join('<div style="height:1px;background:var(--border)"></div>')
+    : `<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px">ما في تمارين بعد — أضف تمرين</div>`;
+
+  document.getElementById('customContent').innerHTML=`
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px">
+      <div style="padding:12px 16px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
+        <span style="font-size:12px;font-weight:700;color:var(--accent)">يوم تمرين</span>
+        <button onclick="toggleDayRest('${day.id}')" style="background:none;border:1px solid var(--border);color:var(--muted);border-radius:7px;padding:4px 10px;font-family:'Cairo',sans-serif;font-size:11px;cursor:pointer">تحويل لراحة 😴</button>
+      </div>
+      ${exRows}
+      <div style="height:1px;background:var(--border)"></div>
+      <button class="add-ex-btn" onclick="addExerciseModal('${customDay}')">+ إضافة تمرين</button>
+    </div>`;
+}
+
+function editExercise(dayId,ei) {
+  const day=schedule.find(d=>d.id===dayId);
+  const ex=day.exercises[ei];
+  openModal(`
+    <div class="modal-title">تعديل التمرين</div>
+    <div class="modal-sub">${ex.name}</div>
+    <div class="form-row" style="margin-bottom:12px">
+      <label class="form-label">اسم التمرين</label>
+      <input class="form-input" id="editName" value="${ex.name}">
+    </div>
+    <div class="form-row" style="margin-bottom:12px">
+      <label class="form-label">عدد السيتات</label>
+      <input class="form-input" id="editSets" type="number" value="${ex.sets}" min="1" max="10">
+    </div>
+    <div class="form-row" style="margin-bottom:12px">
+      <label class="form-label">التكرارات</label>
+      <input class="form-input" id="editReps" value="${ex.reps}">
+    </div>
+    <div class="modal-footer">
+      <button class="modal-btn secondary" onclick="closeModal()">إلغاء</button>
+      <button class="modal-btn primary" onclick="saveEdit('${dayId}',${ei})">حفظ</button>
+    </div>`);
+}
+
+function saveEdit(dayId,ei) {
+  const name=document.getElementById('editName').value.trim();
+  const sets=parseInt(document.getElementById('editSets').value)||3;
+  const reps=document.getElementById('editReps').value.trim()||'10';
+  if(!name) return;
+  const day=schedule.find(d=>d.id===dayId);
+  day.exercises[ei]={...day.exercises[ei],name,sets,reps};
+  if(!state[dayId]) state[dayId]={};
+  state[dayId][ei]=new Array(sets).fill(false);
+  save('schedule'); save('state');
+  closeModal();
+  renderCustomExercises();
+  buildWorkoutUI(); switchDay(currentDay);
+}
+
+function deleteExercise(dayId,ei) {
+  if(!confirm('تبي تحذف هذا التمرين؟')) return;
+  const day=schedule.find(d=>d.id===dayId);
+  day.exercises.splice(ei,1);
+  // rebuild state for this day
+  state[dayId]={};
+  day.exercises.forEach((ex,newEi)=>{ state[dayId][newEi]=new Array(ex.sets).fill(false); });
+  save('schedule'); save('state');
+  renderCustomExercises();
+  buildWorkoutUI(); switchDay(currentDay);
+}
+
+function addExerciseModal(dayId) {
+  openModal(`
+    <div class="modal-title">إضافة تمرين</div>
+    <div class="form-row" style="margin-bottom:12px">
+      <label class="form-label">اسم التمرين</label>
+      <input class="form-input" id="newName" placeholder="مثال: Bench Press">
+    </div>
+    <div class="form-row" style="margin-bottom:12px">
+      <label class="form-label">عدد السيتات</label>
+      <input class="form-input" id="newSets" type="number" value="3" min="1" max="10">
+    </div>
+    <div class="form-row" style="margin-bottom:12px">
+      <label class="form-label">التكرارات</label>
+      <input class="form-input" id="newReps" value="10" placeholder="10 أو 8-12">
+    </div>
+    <div class="form-row" style="margin-bottom:12px">
+      <label class="form-label">تلميح (اختياري)</label>
+      <input class="form-input" id="newTip" placeholder="نصيحة للشكل الصح">
+    </div>
+    <div class="modal-footer">
+      <button class="modal-btn secondary" onclick="closeModal()">إلغاء</button>
+      <button class="modal-btn primary" onclick="saveNewEx('${dayId}')">إضافة</button>
+    </div>`);
+}
+
+function saveNewEx(dayId) {
+  const name=document.getElementById('newName').value.trim();
+  const sets=parseInt(document.getElementById('newSets').value)||3;
+  const reps=document.getElementById('newReps').value.trim()||'10';
+  const tip=document.getElementById('newTip').value.trim();
+  if(!name) return;
+  const day=schedule.find(d=>d.id===dayId);
+  const ei=day.exercises.length;
+  day.exercises.push({name,sets,reps,tip});
+  if(!state[dayId]) state[dayId]={};
+  state[dayId][ei]=new Array(sets).fill(false);
+  save('schedule'); save('state');
+  closeModal();
+  renderCustomExercises();
+  buildWorkoutUI(); switchDay(currentDay);
+}
+
+// ══════════════════════════════════════════════
+// CALORIES
+// ══════════════════════════════════════════════
+function calcCalories() {
+  const w=parseFloat(document.getElementById('calWeight').value);
+  const h=parseFloat(document.getElementById('calHeight').value);
+  const a=parseFloat(document.getElementById('calAge').value);
+  const g=document.getElementById('calGender').value;
+  const goal=document.getElementById('calGoal').value;
+  if(!w||!h||!a) { alert('أدخل كل البيانات'); return; }
+
+  // Mifflin-St Jeor
+  let bmr = g==='m' ? 10*w + 6.25*h - 5*a + 5 : 10*w + 6.25*h - 5*a - 161;
+  let tdee = bmr * 1.55; // moderate activity (5 days/week)
+
+  let calories, label;
+  if(goal==='cut') { calories=Math.round(tdee-400); label='عجز 400 سعرة للحرق'; }
+  else if(goal==='maintain') { calories=Math.round(tdee); label='الحفاظ على الوزن'; }
+  else { calories=Math.round(tdee+300); label='فائض 300 سعرة لبناء العضل'; }
+
+  const protein=Math.round(w*2);
+  const fat=Math.round(calories*0.25/9);
+  const carbs=Math.round((calories - protein*4 - fat*9)/4);
+  const maxMacro=Math.max(protein,carbs,fat);
+
+  document.getElementById('resCalories').textContent=calories.toLocaleString();
+  document.getElementById('resProtein').textContent=protein;
+  document.getElementById('valP').textContent=protein+'g';
+  document.getElementById('valC').textContent=carbs+'g';
+  document.getElementById('valF').textContent=fat+'g';
+  document.getElementById('barP').style.width=(protein/maxMacro*100)+'%';
+  document.getElementById('barC').style.width=(carbs/maxMacro*100)+'%';
+  document.getElementById('barF').style.width=(fat/maxMacro*100)+'%';
+  document.getElementById('calNote').textContent=`الهدف: ${label}. هذه تقديرات — راجع متخصص تغذية للدقة الكاملة.`;
+  document.getElementById('calResults').classList.add('show');
+}
+
+// ══════════════════════════════════════════════
+// MUSIC
+// ══════════════════════════════════════════════
+
+
+// ══════════════════════════════════════════════
+// SERVICE WORKER
+// ══════════════════════════════════════════════
+if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+
+// ══════════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════════
+loadAll();
+const todayId=['sun','mon','tue','wed','thu','fri','sat'][new Date().getDay()];
+currentDay=schedule.find(d=>d.id===todayId&&!d.rest)?todayId:'mon';
+buildWorkoutUI();
+
+// ══════════════════════════════════════════════
+// INTRO
+// ══════════════════════════════════════════════
+window.addEventListener('DOMContentLoaded', function() {
+  const introEl = document.getElementById('intro');
+  if(!introEl) return;
+
+  if(sessionStorage.getItem('introSeen')) {
+    introEl.style.display='none';
+    return;
+  }
+
+  const logo   = document.getElementById('intro-logo');
+  const name   = document.getElementById('intro-name');
+  const bar    = document.getElementById('intro-bar');
+  const tag    = document.getElementById('intro-tag');
+  const loader = document.getElementById('intro-loader');
+  const fill   = document.getElementById('intro-fill');
+
+  if(!logo||!name||!bar||!tag||!loader||!fill) { introEl.style.display='none'; return; }
+
+  setTimeout(()=>{ logo.style.opacity='1'; logo.style.transform='scale(1)'; }, 120);
+  setTimeout(()=>{ name.style.opacity='1'; name.style.transform='translateY(0)'; }, 500);
+  setTimeout(()=>{ bar.style.opacity='1';  bar.style.transform='translateY(0)'; }, 820);
+  setTimeout(()=>{ tag.style.opacity='1'; }, 1100);
+  setTimeout(()=>{ loader.style.opacity='1'; }, 1300);
+  setTimeout(()=>{ fill.style.width='100%'; }, 1360);
+
+  setTimeout(()=>{
+    introEl.style.transition='opacity 0.5s ease';
+    introEl.style.opacity='0';
+    setTimeout(()=>{ introEl.style.display='none'; }, 500);
+    sessionStorage.setItem('introSeen','1');
+  }, 2900);
+});
+
+</script>
+
+<!-- ══ INTRO SCREEN ══ -->
+<div id="intro" style="position:fixed;inset:0;z-index:999;background:#0a0a0f;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden">
+  <div id="intro-bg" style="position:absolute;inset:0;background-image:linear-gradient(rgba(200,255,0,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(200,255,0,0.03) 1px,transparent 1px);background-size:40px 40px"></div>
+
+  <div id="intro-content" style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:0">
+    <!-- Logo -->
+    <div id="intro-logo" style="opacity:0;transform:scale(0.7);transition:opacity 0.7s ease,transform 0.7s ease">
+      <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;border:3px solid rgba(200,255,0,0.5);box-shadow:0 0 40px rgba(200,255,0,0.15)">
+        <img src="icons/icon-192.png" width="120" height="120" style="display:block;width:100%;height:100%">
+      </div>
+    </div>
+
+    <!-- Name -->
+    <div id="intro-name" style="opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;margin-top:28px;text-align:center">
+      <div style="font-family:'Cairo',sans-serif;font-size:36px;font-weight:900;color:#c8ff00;letter-spacing:3px;line-height:1">ALSHAMARI</div>
+      <div style="display:flex;justify-content:center;gap:8px;margin:8px 0">
+        <div style="width:5px;height:5px;border-radius:50%;background:#c8ff00;opacity:0.6"></div>
+        <div style="width:5px;height:5px;border-radius:50%;background:#c8ff00"></div>
+        <div style="width:5px;height:5px;border-radius:50%;background:#c8ff00;opacity:0.6"></div>
+      </div>
+      <div style="font-family:'Cairo',sans-serif;font-size:13px;color:#555568;letter-spacing:6px">GYM &amp; FITNESS</div>
+    </div>
+
+    <!-- Barbell animation -->
+    <div id="intro-bar" style="opacity:0;transform:translateY(16px);transition:opacity 0.6s ease,transform 0.6s ease;margin-top:36px">
+      <svg width="200" height="40" viewBox="0 0 200 40">
+        <rect x="10" y="16" width="180" height="8" rx="4" fill="#c8ff00" opacity="0.9"/>
+        <rect x="8" y="6" width="14" height="28" rx="4" fill="#c8ff00"/>
+        <rect x="26" y="10" width="9" height="20" rx="3" fill="#c8ff00" opacity="0.8"/>
+        <rect x="165" y="10" width="9" height="20" rx="3" fill="#c8ff00" opacity="0.8"/>
+        <rect x="178" y="6" width="14" height="28" rx="4" fill="#c8ff00"/>
+      </svg>
+    </div>
+
+    <!-- Tagline -->
+    <div id="intro-tag" style="opacity:0;transition:opacity 0.6s ease;margin-top:24px;text-align:center">
+      <div style="font-family:'Cairo',sans-serif;font-size:14px;color:#555568">ابدأ رحلتك اليوم 💪</div>
+    </div>
+
+    <!-- Loading bar -->
+    <div id="intro-loader" style="opacity:0;transition:opacity 0.4s ease;margin-top:40px;width:160px">
+      <div style="width:100%;height:3px;background:#222230;border-radius:100px;overflow:hidden">
+        <div id="intro-fill" style="height:100%;width:0%;background:linear-gradient(90deg,#c8ff00,#a0ff00);border-radius:100px;transition:width 1.2s ease"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
